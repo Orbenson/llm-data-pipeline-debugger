@@ -1,0 +1,15 @@
+pipeline_log: "logs/sample_pipeline_error.log"
+data_sample: "data/sample_dataset.csv"
+output_dir: "debug_reports"
+memory_store: "memory/past_errors.json"
+llm_provider: "google_gemini"
+llm_model: "gemini-2.0-flash"
+llm_temperature: 0.0
+gemini_api_key: "AIzaSyAr_1zH1-NUtCMzfi5pReyCccsJqoaLV7g"
+expectations:
+  - expectation_type: "ExpectColumnValuesToNotBeNull"
+    kwargs: {"column": "id"}
+  - expectation_type: "ExpectColumnValuesToBeUnique"
+    kwargs: {"column": "id"}
+log_level: "INFO"
+log_file: "pipeline_debugger.log"

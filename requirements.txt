@@ -1,0 +1,9 @@
+langchain
+pandas
+great_expectations
+openai
+python-dotenv
+PyYAML
+langgraph
+streamlit
+pytest
